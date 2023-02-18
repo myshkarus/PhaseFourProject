@@ -17,7 +17,7 @@ import pages.NavigationMenuPage;
 import pages.NavigationMenuPage.To;
 
 public class BaseClass {
-	
+
 	AndroidDriver<MobileElement> driver;
 
 	@BeforeTest
@@ -47,7 +47,7 @@ public class BaseClass {
 	@AfterTest
 	public void tearDown() {
 		try {
-			// driver.quit();
+			driver.quit();
 		} catch (Exception e) {
 		}
 	}
